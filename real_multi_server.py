@@ -1,3 +1,7 @@
+# 서버컴퓨터에서 실행되는 멀티쓰레드 서버 코드입니다.
+# 라즈베리파이로부터 지속적으로 GPS 신호를 수신합니다. 이때 GPS 신호는 NMEA GPGGA signal 로 넘어오게 되며, 이를 위도 및 경도 값으로 환산합니다.
+# 위도 경도값으로 환산하여 저장한 위치 정보가 1000개 이상 모이면, 해당 위치 데이터를 k-means clustering 모듈로 넘겨 군집화하고 드론의 최적 위치를 계산합니다.
+
 import socket 
 from _thread import *
 import k_means_clustering as KMC

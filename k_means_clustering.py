@@ -1,3 +1,7 @@
+# 드론의 최적 위치를 결정하기 위한 k-means clustering 알고리즘 모듈입니다.
+# 멀티쓰레드 서버로부터 넘겨받은 위치정보를 3개의 집단으로 군집화하고, 군집의 중심을 도출합니다.
+# 3개의 군집의 중심을 다시 평균내어 VR/AR 서비스를 위한 드론의 최적 위치를 결정합니다.
+
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -12,7 +16,6 @@ def cluster(cordinates_Data):
     m=x.shape[0]
 
     mu = x[np.random.randint(0, m, k), :]
-    pre_mu = copy.deepcopy(mu)
     print(mu)
   
     samecount = 0

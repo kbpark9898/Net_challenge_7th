@@ -1,12 +1,12 @@
+# 라즈베리파이에서 실행되는 클라이언트 파이썬 스크립트입니다.
+# GPS 센서에서 탐지한 NMEA GPGGA 정보값을 서버로 전송합니다.
+
 import socket
 import serial
 import pynmea2
 import time
 def parseGPS(s_port, s):
 	str = s_port.readline()
-#	s.send(str.encode(encoding='utf_8', errors = 'strict'))
-#	data = s.recv(1024)
-#	print 'result: ' + (data.decode())
 	if str.find('GGA')>0:
 		print str
 		msg = pynmea2.parse(str)
