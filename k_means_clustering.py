@@ -3,15 +3,12 @@
 # 3개의 군집의 중심을 다시 평균내어 VR/AR 서비스를 위한 드론의 최적 위치를 결정합니다.
 
 import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
 import copy
 
 def cluster(cordinates_Data):        
     geo = np.array(cordinates_Data)
     x=np.asmatrix(geo)
     print(x)
-  
     k=3
     m=x.shape[0]
 
