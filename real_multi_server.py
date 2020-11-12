@@ -49,7 +49,6 @@ def threaded(client_socket, addr):
              
     client_socket.close() 
 
-#'117.123.90.209'
 HOST =''
 PORT =34190
 
