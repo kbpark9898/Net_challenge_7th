@@ -9,5 +9,5 @@
 
 #### 소스코드 구성
 1. gps_client.py : 라즈베리파이에서 서버로 위치정보를 전송하기 위한 스크립트
-2. k_means_clustering.py : 라즈베리파이에서 수집한 위치정보를 이용하여 위치정보를 군집화. VR/AR 서비스 중계 드론의 최적 위치 도추 ㄹ
+2. k_means_clustering.py : 라즈베리파이에서 수집한 위치정보를 이용하여 위치정보를 군집화. VR/AR 서비스 중계 드론의 최적 위치 도출
 3. real_multi_server.py : 라즈베리파이의 위치정보를 수집하고 k_means_clustering 모듈을 호출
